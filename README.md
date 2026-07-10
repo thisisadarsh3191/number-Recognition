@@ -26,10 +26,11 @@ Here is a quick breakdown of the core files included in this repository:
 To get up and running with this project, follow these general steps:
 
 1. **Prerequisites:** Ensure you have Python installed, along with the necessary machine learning libraries refer `requirements.txt`.
-2. **Run a Prediction:** Just run whiteboard.py and try it out
+   In command line, preferably in a virtual environment in the path where the files are stored, run `pip install -r requirements.txt`
+3. **Run a Prediction:** Just run whiteboard.py and try it out
 
 
-3. **Train from Scratch (Optional):** If you prefer to train the model yourself, experiment with different layers, or learn how the architecture is built, dive into the `cnn.py` file.
+4. **Train from Scratch (Optional):** If you prefer to train the model yourself, experiment with different layers, or learn how the architecture is built, dive into the `cnn.py` file.
 
 
 Development on this project is ongoing.
