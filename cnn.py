@@ -1,6 +1,8 @@
 import os
+import logging
+logging.getLogger('tensorflow').setLevel(logging.ERROR)
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 from keras.models import Sequential
 from keras.layers import Input,Dense
@@ -42,4 +44,4 @@ scores = model.evaluate(xTest,yTest,verbose=0)#type: ignore
 
 print(f"Accuracy:{scores[1]}\n Error: {100-scores[1]*100}")
 
-model.save(".\\handwritingRecognition\\cnnIdentify.keras")
+model.save("cnnIdentify.keras")
